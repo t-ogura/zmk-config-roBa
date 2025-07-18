@@ -33,10 +33,4 @@ if SHIELD_ROBA_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "roBa_dongle"
-
-# keymapは無し（空）
-config ZMK_KEYMAP
-    string
-    default ""
-
 endif

@@ -26,4 +26,6 @@ include:
  - board: seeeduino_xiao_ble
    shield: settings_reset
  - board: seeeduino_xiao_ble
-   shield: roBa_dongle prospector_adapter
+   shield: roBa_dongle
+ - board: seeeduino_xiao_ble
+   shield: prospector_adapter

@@ -9,6 +9,10 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_KEYMAP
+    string
+    default "roBa_R"
+
 endif
 
 if SHIELD_ROBA_L
@@ -19,6 +23,10 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT
     default y
 
+config ZMK_KEYMAP
+    string
+    default "roBa_L"
+
 endif
 
 if SHIELD_ROBA_DONGLE
@@ -26,7 +34,7 @@ if SHIELD_ROBA_DONGLE
 config ZMK_KEYBOARD_NAME
     default "roBa_dongle"
 
-# キーマップを空にすることで回避
+# keymapは無し（空）
 config ZMK_KEYMAP
     string
     default ""

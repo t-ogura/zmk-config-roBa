@@ -1,4 +1,4 @@
-manifest:
+  manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -29,10 +29,10 @@ manifest:
     - name: zmk-layout-shift
       remote: kot149
       revision: v1
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main                              # <---
-      path: modules/prospector-zmk-module  # ← 追加
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
+      kconfig: boards/shields/prospector_adapter/Kconfig
 
   self:
     path: config

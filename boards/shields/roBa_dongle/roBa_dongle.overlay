@@ -1,0 +1,10 @@
+/ {
+    chosen {
+        zmk,display = &prospector_display;
+    };
+};
+
+&prospector_display {
+    status = "okay";
+    label = "Prospector";
+};

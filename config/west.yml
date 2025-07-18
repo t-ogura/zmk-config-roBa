@@ -32,5 +32,7 @@ manifest:
     - name: prospector-zmk-module                 # <--- and these
       remote: carrefinho                          # <---
       revision: main                              # <---
+      path: modules/prospector-zmk-module  # ← 追加
+
   self:
     path: config

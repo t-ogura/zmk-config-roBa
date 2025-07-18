@@ -20,3 +20,13 @@ config ZMK_SPLIT
     default y
 
 endif
+
+if SHIELD_ROBA_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "roBa_dongle"
+
+config ZMK_KEYMAP
+    default y
+
+endif

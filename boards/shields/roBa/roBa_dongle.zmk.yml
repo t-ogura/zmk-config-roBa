@@ -1,8 +1,5 @@
-file_format: "1"
-id: roBa_dongle
-name: roBa Dongle
+name: roBa_dongle
 type: shield
 requires: [seeeduino_xiao_ble]
 features:
   - display
-  - keys

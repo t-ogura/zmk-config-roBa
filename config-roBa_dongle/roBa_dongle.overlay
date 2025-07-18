@@ -1,0 +1,8 @@
+/ {
+    chosen {
+        zephyr,display = &st7789;
+    };
+};
+
+/* 必要に応じて下記を含める（pwm, i2c, spi の statusなど） */
+/* 例：pwm1, spi3, i2c0 を有効にしたい場合 */

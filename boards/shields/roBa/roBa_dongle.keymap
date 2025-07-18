@@ -1,0 +1,10 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        label = "roBa dongle dummy keymap";
+
+        default_layer {
+            bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+        };
+    };
+};

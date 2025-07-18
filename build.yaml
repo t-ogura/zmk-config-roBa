@@ -29,7 +29,6 @@ include:
     shield: settings_reset
 
   - board: seeeduino_xiao_ble
-    shield: prospector_adapter roBa_dongle
+    shield: roBa_dongle
     cmake-args: -DZMK_CONFIG=../../config-roBa_dongle
     artifact-name: roBa_dongle
-

@@ -26,7 +26,9 @@ if SHIELD_ROBA_DONGLE
 config ZMK_KEYBOARD_NAME
     default "roBa_dongle"
 
+# キーマップを空にすることで回避
 config ZMK_KEYMAP
-    default y
+    string
+    default ""
 
 endif

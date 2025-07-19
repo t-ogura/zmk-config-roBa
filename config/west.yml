@@ -16,7 +16,7 @@ manifest:
       revision: main
     - name: prospector-zmk-module
       remote: prospector
-      revision: feature/scanner-mode
+      revision: fix/split-peripheral-build
       path: modules/prospector-zmk-module
   self:
     path: config

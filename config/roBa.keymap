@@ -8,6 +8,8 @@
 #define SCROLL 5
 #define NUM 6
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
@@ -83,13 +85,12 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
             tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -103,7 +104,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1      &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll_up_down>; // 通常スクロール
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {

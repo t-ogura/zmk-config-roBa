@@ -105,7 +105,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1      &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
